@@ -62,4 +62,13 @@ logger.info(f"Catalog: {cfg.catalog}, Schema: {cfg.schema}, Volume: {cfg.volume}
 
 # COMMAND ----------
 
-processor.process_and_save()
+# processor.process_and_save()
+# Manually set pdf_dir to the folder where we uploaded PDFs
+processor.pdf_dir = "/Volumes/mlops_dev/rgopinat/arxiv_files/202603300508"
+
+# Skip download step - PDFs already uploaded manually
+processor.parse_pdfs_with_ai()
+logger.info("Parsed documents.")
+
+processor.process_chunks()
+logger.info("Processing complete!")
