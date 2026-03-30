@@ -30,7 +30,7 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install ../arxiv_curator-0.1.0-py3-none-any.whl --force-reinstall
+# MAGIC #%pip install ../arxiv_curator-0.1.0-py3-none-any.whl --force-reinstall
 
 # COMMAND ----------
 
